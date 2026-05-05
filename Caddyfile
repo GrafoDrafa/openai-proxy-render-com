@@ -1,0 +1,6 @@
+:{$PORT}
+
+reverse_proxy https://api.openai.com {
+    header_up Host api.openai.com
+    flush_interval -1
+}
